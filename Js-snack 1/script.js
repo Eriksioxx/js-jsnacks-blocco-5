@@ -25,64 +25,62 @@ const zucchina = [
     {
         varietà: 'Zucchino romanesco',
         peso: 3,
-        lunghezza: 25,
+        lunghezza: 25
     },
     {
         varietà: 'Zucchino ortolano di Faenza',
         peso: 2,
-        lunghezza: 16,
+        lunghezza: 16
     },
     {
         varietà: 'Zucchina lunga fiorentina',
         peso: 4,
-        lunghezza: 16,
+        lunghezza: 16
     },
     {
         varietà: 'Zucchino siciliano',
         peso: 7,
-        lunghezza: 13,
+        lunghezza: 13
     },
     {
         varietà: 'Zucchina striata di Napoli',
         peso: 8,
-        lunghezza: 22,
+        lunghezza: 22
     },
     {
         varietà: 'Zucchina bianca triestina',
         peso: 4,
-        lunghezza: 23,
+        lunghezza: 23
     },
     {
         varietà: 'Zucchina rigata pugliese',
         peso: 2,
-        lunghezza: 52,
+        lunghezza: 52
     },
     {
         varietà: 'Zucchino tondo di Piacenza',
         peso: 3,
-        lunghezza: 8,
+        lunghezza: 8
     },
     {
         varietà: 'Zucchino tondo di Nizza',
         peso: 5,
-        lunghezza: 16,
+        lunghezza: 16
     },
     {
         varietà: 'Zucchino tondo di Firenze',
         peso: 7,
-        lunghezza: 17,
+        lunghezza: 17
     },
-
 ];
 
-const { peso, lunghezza } = zucchina;
-console.table(peso, lunghezza);
+let pesoSum = 0;
 
-// let { peso } = pesoZucchine;
+for (let i = 0; i < zucchina.length; i++) {
+    pesoSum += zucchina[i].peso;
 
-// let sum = 0;
-// for (let i = 0; i < pesoZucchine.length; i++) {
-//     sum += zucchina[i];
+    console.table(zucchina[[i]].varietà, zucchina[i].peso);
+}
 
-//     console.log('Il peso complessivo di tutte le zucchine è: ', sum);
-// }
+
+console.log('Tutte le zucchine pesano', pesoSum);
