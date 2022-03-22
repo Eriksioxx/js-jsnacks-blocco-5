@@ -6,15 +6,18 @@ console.log('JS OK!');
 const insertWord = prompt('Insert word...').toLocaleLowerCase();
 
 
+const finalWord = reverse(insertWord);
 
-reverse(insertWord);
+console.log(finalWord);
 
+
+// funzione reverse parola
 function reverse(word) {
     let reverseWord = '';
 
-    (let i = word.length - 1; i >= 0; i--) {
+    for (let i = word.length - 1; i >= 0; i--) {
 
-        reverseWord += word;
+        reverseWord += word[i];
     }
     return reverseWord;
 }
