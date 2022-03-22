@@ -1,21 +1,5 @@
 console.log('JS OK!');
 
-// Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
-// Calcola quanto pesano tutte le zucchine.
-
-// Crea 10 oggetti che rappresentano una zucchina. Dividi in due array separati le zucchine che misurano meno o più di 15cm.
-// Infine stampa separatamente quanto pesano i due gruppi di zucchine.
-
-// Scrivi una funzione che accetti una stringa come argomento e la ritorni girata (es. Ciao -> oaiC)
-
-// BONUS
-// Scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e
-// dall’altro, es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
-
-// Scrivi una funzione che accetti tre argomenti: un array e due numeri (“a” più piccolo di “b” e “b” grande al massimo quanto
-// il numero di elementi dell’array). La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra “a” e “b”
-
-
 // EXERCISE
 
 // Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
@@ -30,7 +14,7 @@ const zucchina = [
     {
         varietà: 'Zucchino ortolano di Faenza',
         peso: 2,
-        lunghezza: 16
+        lunghezza: 12
     },
     {
         varietà: 'Zucchina lunga fiorentina',
@@ -50,12 +34,12 @@ const zucchina = [
     {
         varietà: 'Zucchina bianca triestina',
         peso: 4,
-        lunghezza: 23
+        lunghezza: 11
     },
     {
         varietà: 'Zucchina rigata pugliese',
         peso: 2,
-        lunghezza: 52
+        lunghezza: 14
     },
     {
         varietà: 'Zucchino tondo di Piacenza',
@@ -70,7 +54,7 @@ const zucchina = [
     {
         varietà: 'Zucchino tondo di Firenze',
         peso: 7,
-        lunghezza: 17
+        lunghezza: 13
     },
 ];
 
@@ -79,7 +63,7 @@ let pesoSum = 0;
 for (let i = 0; i < zucchina.length; i++) {
     pesoSum += zucchina[i].peso;
 
-    console.table(zucchina[[i]].varietà, zucchina[i].peso);
+    console.table(zucchina[i].varietà, zucchina[i].peso);
 }
 
 
